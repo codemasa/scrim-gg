@@ -36,3 +36,6 @@ jspm_packages
 
 # DS_Store
 .DS_Store
+
+#client.min.js
+client.min.js
