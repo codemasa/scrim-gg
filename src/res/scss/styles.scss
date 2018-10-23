@@ -1,0 +1,22 @@
+.header {
+    background-color: #AAAAAA;
+    color: #FF0000;
+    height: 40px;
+}
+
+.body {
+    background-color: #BBBBBB;
+    position: absolute;
+    top: 40px; /* Header Height */
+    bottom: 20px; /* Footer Height */
+    width: 100%;
+}
+
+.footer {
+    background-color: #AAAAAA;
+    color: #FF0000;
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+}

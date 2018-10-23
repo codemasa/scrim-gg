@@ -6,6 +6,7 @@ module.exports = {
   context: path.join(__dirname, "src"),
   devtool: debug ? "inline-sourcemap" : null,
   entry: "./js/client.js",
+  mode: "development",
   module: {
     rules: [
       {
@@ -13,7 +14,15 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
 
-      }
+    },
+    {
+            test: /\.scss$/,
+            use: [
+                "style-loader", // creates style nodes from JS strings
+                "css-loader", // translates CSS into CommonJS
+                "sass-loader" // compiles Sass to CSS, using Node Sass by default
+            ]
+        }
     ]
   },
   output: {
