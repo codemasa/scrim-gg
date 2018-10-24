@@ -1,24 +1,28 @@
 .header {
-    background-color: #AAAAAA;
+    background: radial-gradient(#156E7A, #014751);
+
+    position: absolute;
+    width: 100%;
     color: #FF0000;
-    height: 40px;
+    top: 0px;
+    bottom: 0px;
 }
 
 .body {
-    background-color: #BBBBBB;
+    background-color: #01333A;
     position: absolute;
-    top: 40px; /* Header Height */
-    bottom: 20px; /* Footer Height */
+    top: 200px; /* Header Height */
+    bottom: 0px; /* Footer Height */
     width: 100%;
 }
 
 .footer {
-    background-color: #AAAAAA;
+    background: #156E7A;
     color: #FF0000;
-    position:absolute;
-    left:0;
-    bottom:0;
-    right:0;
+    height: 200px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
 }
 
 .header, .body, .footer{
@@ -28,9 +32,35 @@
 
 .side-bar{
     float: left;
+    top: 0px;
+    bottom: 0px;
+    position: absolute;
+    background-color: #081C59
+
+}
+
+.side-nav{
 }
 
 .side-bar-item{
     width: 100px;
     height: 100px;
+    background-color: #265099;
+    color: #FFFFFF
+}
+.side-bar-item-logo{
+    background-color: #081C59;
+    margin-bottom: 100px;
+    @extend .side-bar-item;
+}
+
+.side-bar-item-settings{
+
+    @extend .side-bar-item;
+}
+
+.side-nav-settings{
+    vertical-align: bottom;
+    bottom: 0px;
+    position: absolute;
 }
