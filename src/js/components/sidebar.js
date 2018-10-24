@@ -1,9 +1,17 @@
 import React from "react";
 import {SideNav, Nav} from "react-sidenav"
 
+import ModalConductor from './modals/ModalConductor'
 export default class Header extends React.Component {
 
+    onItemSelection = (id) => {
+        const { currentModal, onSetModal } = this.props;
+        onSetModal(id.id)
+        console.log(id.id);
+    };
+
     render() {
+        const { currentModal } = this.props
         return (
             <div className="side-bar">
                 <div className="side-nav">
@@ -23,8 +31,9 @@ export default class Header extends React.Component {
                     </SideNav>
                 </div>
                 <div className="side-nav-settings">
-                    <SideNav>
-                        <Nav id="s" className="side-bar-item-settings">
+                    <SideNav defaultSelectedPath="0"
+                    onItemSelection={this.onItemSelection}>
+                        <Nav id="SETTINGS" className="side-bar-item-settings">
                             Settings
                         </Nav>
                     </SideNav>
