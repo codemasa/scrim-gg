@@ -20,3 +20,17 @@
     bottom:0;
     right:0;
 }
+
+.header, .body, .footer{
+    margin-left: 100px;
+    padding-left: 20px;
+}
+
+.side-bar{
+    float: left;
+}
+
+.side-bar-item{
+    width: 100px;
+    height: 100px;
+}
