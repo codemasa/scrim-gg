@@ -49,14 +49,14 @@
     color: #FFFFFF
 }
 .side-bar-item-logo{
-    background-color: #081C59;
     margin-bottom: 100px;
+    color: #FFFFFF;
+
     @extend .side-bar-item;
 }
 
 .side-bar-item-settings{
     background-color: #081C59;
-
     @extend .side-bar-item;
 }
 
@@ -70,3 +70,16 @@
     z-index: 9999;
     background-color:transparent!important;
 }
+.icon{
+  color: #FFFFFF;
+  background-color: transparent;
+  height: 80px;
+  width: 80px;
+}
+
+.logo{
+  padding-top: 20px;
+  height: 80px;
+}
+
+.invert { filter: invert(100%); }
