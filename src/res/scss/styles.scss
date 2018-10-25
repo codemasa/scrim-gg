@@ -55,6 +55,7 @@
 }
 
 .side-bar-item-settings{
+    background-color: #081C59;
 
     @extend .side-bar-item;
 }
@@ -63,4 +64,9 @@
     vertical-align: bottom;
     bottom: 0px;
     position: absolute;
+}
+
+.modal {
+    z-index: 9999;
+    background-color:transparent!important;
 }
