@@ -12,7 +12,9 @@ export default class Header extends React.Component {
   onItemSelection = (id) => {
     switch(id.id){
       case("SETTINGS"):
-        this.child.current.handleShow();
+        if(this.child.current.state.show == false){
+          this.child.current.handleShow();
+        }
 
         break;
     }

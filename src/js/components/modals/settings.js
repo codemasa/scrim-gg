@@ -18,7 +18,7 @@ class SettingsModal extends React.Component {
   }
 
   handleShow = () => {
-    this.setState({show: !this.state.show});
+    this.setState({show: true});
   }
 
   render() {
