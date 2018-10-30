@@ -6,6 +6,7 @@
     color: #FF0000;
     top: 0px;
     bottom: 0px;
+    height: 200px;
 }
 
 .body {
@@ -80,6 +81,18 @@
 .logo{
   padding-top: 20px;
   height: 80px;
+}
+
+.header-button-container{
+  top: 10px
+}
+.header-button{
+  display: inline-block;
+}
+.game-header{
+  padding: 0px;
+  font-size: 30pt;
+  margin-bottom: 5px;
 }
 
 .invert { filter: invert(100%); }

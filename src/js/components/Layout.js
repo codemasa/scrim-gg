@@ -7,17 +7,22 @@ import SideBar from "./sidebar"
 
 class Layout extends React.Component {
 
-    onSetModal = id => {
-        this.setState({currentModal: id, show: false});
-    };
+    constructor(props){
+      super(props);
+      this.state = {currentTab: "home"};
+    }
 
+
+    tabChanged = id => {
+      this.setState({currentTab: id});
+    }
 
     render() {
         return (
         <div>
-            <Header/>
+            <Header currentTab={this.state.currentTab}/>
             <Body/>
-            <SideBar currentModal={this.state} onSetModal={this.onSetModal}/>
+            <SideBar tabChanged={this.tabChanged}/>
         </div>)
     }
 }
