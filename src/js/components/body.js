@@ -1,10 +1,12 @@
 import React from "react";
 
+
+import Playbook from "./playbook";
 export default class Body extends React.Component {
     render(){
         return(
             <div className="body">
-                <h1>Scrim.gg</h1>
+                <Playbook/>
             </div>
         )
     }

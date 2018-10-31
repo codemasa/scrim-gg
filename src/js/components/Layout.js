@@ -21,7 +21,7 @@ class Layout extends React.Component {
         return (
         <div>
             <Header currentTab={this.state.currentTab}/>
-            <Body/>
+            <Body currentTab={this.state.currentTab}/>
             <SideBar tabChanged={this.tabChanged}/>
         </div>)
     }

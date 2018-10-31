@@ -100,13 +100,13 @@
 }
 
 
-.btn, .btn-default, .btn-group, .open>.dropdown-toggle.btn-default{
+.btn, .btn-default, .open>.dropdown-toggle.btn-default{
 
   border: none;
   background: transparent;
   color: white;
   padding: 0px;
-  margin-right: 20px;
+
   &:hover{
     background: transparent;
     color: #AAAAAA
@@ -133,6 +133,34 @@
 .user-name{
   display: inline-block;
   padding-left: 5px;
+}
+.dropdown-menu{
+  padding: 0;
+}
+.notifications-menu{
+  height: 500px;
+  min-width: 100px;
+  background-color: #555555;
+  padding: 20px;
+}
+.notifications{
+  height: 500px;
+  min-width: 100px;
+  background-color: #265099;
+}
+
+.notifications-title{
+  padding: 20px;
+  background-color: #081C59;
+}
+.no-hover{
+  pointer-events: none;
+
+}
+
+.dropdown-button{
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .invert { filter: invert(100%); }

@@ -7,7 +7,7 @@ export default class Header extends React.Component {
   render() {
     return (<div className="header">
       <div className="header-button">
-        <HeaderButtons className="header-button-container"/>
+        <HeaderButtons/>
       </div>
       <div className="logo-div">
         <img className="logo" src={require("../../res/icons/ic_logo.png")}/>
