@@ -8,7 +8,7 @@ module.exports = {
     ? "inline-sourcemap"
     : null,
   entry: "./js/client.js",
-  mode: "production",
+  mode: "development",
   module: {
     rules: [
       {

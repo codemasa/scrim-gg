@@ -9,7 +9,7 @@ class Layout extends React.Component {
 
     constructor(props){
       super(props);
-      this.state = {currentTab: "home"};
+      this.state = {currentTab: "Home"};
     }
 
 

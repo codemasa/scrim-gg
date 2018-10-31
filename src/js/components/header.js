@@ -6,9 +6,15 @@ import HeaderButtons from "./HeaderButtons"
 export default class Header extends React.Component {
   render() {
     return (<div className="header">
-      <img className="logo" src={require("../../res/icons/ic_logo.png")}/>
-      <p className="game-header">{this.props.currentTab}</p> 
-      <HeaderButtons/>
+      <div className="header-button">
+        <HeaderButtons className="header-button-container"/>
+      </div>
+      <div className="logo-div">
+        <img className="logo" src={require("../../res/icons/ic_logo.png")}/>
+      </div>
+      <div className="game-header">
+        <p>{this.props.currentTab}</p>
+      </div>
     </div>)
   }
 }

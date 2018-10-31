@@ -27,8 +27,7 @@
 }
 
 .header, .body, .footer{
-    margin-left: 100px;
-    padding-left: 20px;
+    padding-left: 120px;
 }
 
 .side-bar{
@@ -71,7 +70,7 @@
     z-index: 9999;
     background-color:transparent!important;
 }
-.icon{
+.sidebar-icon{
   color: #FFFFFF;
   background-color: transparent;
   height: 80px;
@@ -83,16 +82,57 @@
   height: 80px;
 }
 
-.header-button-container{
-  top: 10px
-}
 .header-button{
-  display: inline-block;
+  padding-top: 20px;
+  padding-right: 20px;
+  float:right;
+
 }
 .game-header{
   padding: 0px;
   font-size: 30pt;
   margin-bottom: 5px;
+  clear: both;
+}
+
+.logo-div{
+  float:left;
+}
+
+
+.btn, .btn-default, .btn-group, .open>.dropdown-toggle.btn-default{
+
+  border: none;
+  background: transparent;
+  color: white;
+  padding: 0px;
+  margin-right: 20px;
+  &:hover{
+    background: transparent;
+    color: #AAAAAA
+  }
+  &:active{
+    background: transparent;
+    outline: none;
+    color: #000000
+  }
+  &:focus{
+    background: transparent;
+    outline: none;
+    color: #999999
+  }
+  &:active:hover{
+    background: transparent;
+    outline: none;
+    color: #000000
+  }
+
+
+
+}
+.user-name{
+  display: inline-block;
+  padding-left: 5px;
 }
 
 .invert { filter: invert(100%); }

@@ -9,7 +9,7 @@ export default class Header extends React.Component {
   constructor(props, context){
     super(props,context);
     this.child = React.createRef();
-    this.state = {currentTab: "home"};
+    this.state = {currentTab: "Home"};
   }
 
   onItemSelection = (id) => {
@@ -51,31 +51,31 @@ export default class Header extends React.Component {
 
       <div className="side-nav">
 
-        <SideNav defaultSelectedPath="h" onItemSelection={this.onItemSelection}>
+        <SideNav defaultSelectedPath="Home" onItemSelection={this.onItemSelection}>
           <Nav id="Home" className="side-bar-item-logo">
-            <Icon className="icon " size="100%" icon={homeIcon}/>
+            <Icon className="sidebar-icon " size="100%" icon={homeIcon}/>
           </Nav>
           <Nav id="League of Legends" className="side-bar-item">
-            <img className="icon invert" src={require("../../res/icons/ic_lol.png")}  />
+            <img className="sidebar-icon invert" src={require("../../res/icons/ic_lol.png")}  />
 
 
           </Nav>
           <Nav id="Fortnite: Battle Royale" className="side-bar-item">
-            <img className="icon invert" src={require("../../res/icons/ic_fn.png")}  />
+            <img className="sidebar-icon invert" src={require("../../res/icons/ic_fn.png")}  />
 
           </Nav>
           <Nav id="Rocket League" className="side-bar-item">
-            <img className="icon invert" src={require("../../res/icons/ic_rl.png")}  />
+            <img className="sidebar-icon invert" src={require("../../res/icons/ic_rl.png")}  />
           </Nav>
           <Nav id="Overwatch" className="side-bar-item">
-            <img className="icon" src={require("../../res/icons/ic_ow.png")}  />
+            <img className="sidebar-icon" src={require("../../res/icons/ic_ow.png")}  />
           </Nav>
         </SideNav>
       </div>
       <div className="side-nav-settings">
         <SideNav onItemSelection={this.onItemSelection} selectedPath={this.path}>
           <Nav id="SETTINGS" className="side-bar-item-settings">
-            <Icon className="icon" size="100%" icon={settingsIcon}/>
+            <Icon className="sidebar-icon" size="100%" icon={settingsIcon}/>
             <Settings ref={this.child}/>
           </Nav>
         </SideNav>
